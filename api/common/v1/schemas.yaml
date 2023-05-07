@@ -75,3 +75,4 @@ components:
               code:
                 type: integer
                 description: A numeric code for the error.
+paths: {}
