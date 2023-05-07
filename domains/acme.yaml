@@ -26,6 +26,7 @@ components:
           format: int32
         message:
           type: string
+# a schema AdvancedErrorModel  
 
   ####################
   # Common parameters
