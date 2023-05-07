@@ -57,3 +57,4 @@ components:
           type: number
           description: The probability of default for the fixed income security.
          
+paths: {}
