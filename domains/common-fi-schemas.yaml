@@ -1,0 +1,59 @@
+openapi: "3.0.0"
+info:
+  title: Financial APIs - Fixed Income Schemas
+  version: 1.0.0
+components:
+  schemas:
+    bond:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The unique identifier for the bond.
+        issuer:
+          type: string
+          description: The name of the bond issuer.
+        maturity_date:
+          type: string
+          format: date
+          description: The maturity date of the bond.
+        coupon_rate:
+          type: number
+          description: The coupon rate of the bond.
+        type:
+          type: string
+          description: The type of the bond.
+    yield_curve:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The unique identifier for the yield curve.
+        date:
+          type: string
+          format: date
+          description: The date of the yield curve.
+        term_structure:
+          type: array
+          items:
+            type: object
+            properties:
+              term:
+                type: string
+                description: The term of the interest rate.
+              interest_rate:
+                type: number
+                description: The interest rate for the term.
+    credit_risk:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The unique identifier for the credit risk.
+        credit_rating:
+          type: string
+          description: The credit rating of the fixed income security.
+        default_probability: 
+          type: number
+          description: The probability of default for the fixed income security.
+         
