@@ -44,7 +44,7 @@ components:
               interest_rate:
                 type: number
                 description: The interest rate for the term.
-    credit_risk:
+    creditRisk:
       type: object
       properties:
         id:
