@@ -11,68 +11,55 @@ components:
           type: string
           description: A unique identifier for the request.
     BadRequest:
-      description: The request was invalid or malformed.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-                description: A description of the error.
-              code:
-                type: integer
-                description: A numeric code for the error.
+      type: object
+      properties:
+        message:
+          type: string
+          description: A description of the error.
+        code:
+          type: integer
+          description: A numeric code for the error.
     Unauthorized:
-      description: The request was not authorized.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-                description: A description of the error.
-              code:
-                type: integer
-                description: A numeric code for the error.
+      type: object
+      properties:
+        message:
+          type: string
+          description: A description of the error.
+        code:
+          type: integer
+          description: A numeric code for the error.
+           
     Forbidden:
-      description: The request was valid, but the server refused to respond.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-                description: A description of the error.
-              code:
-                type: integer
-                description: A numeric code for the error.
+      type: object
+      properties:
+        message:
+          type: string
+          description: A description of the error.
+        code:
+          type: integer
+          description: A numeric code for the error.
     NotFound:
-      description: The requested resource was not found.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-                description: A description of the error.
-              code:
-                type: integer
-                description: A numeric code for the error.
+      type: object
+      properties:
+        message:
+          type: string
+          description: A description of the error.
+        code:
+          type: integer
+          description: A numeric code for the error.
     ServerError:
-      description: An unexpected error occurred on the server.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-                description: A description of the error.
-              code:
-                type: integer
-                description: A numeric code for the error.
+      type: object
+      properties:
+        message:
+          type: string
+          description: A description of the error.
+        code:
+          type: integer
+          description: A numeric code for the error.
+    requestBodies: {}
+    parameters: {}
+    responses: {}
+    headers: {}
+    pathitems: {}
+    examples: {}
 paths: {}
